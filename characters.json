@@ -61,7 +61,7 @@
         "id": 2,
         "level": 1,
         "fullName": "Warrior of Coast",
-        "classes": [{"type": "warrior", "level": 1}],
+        "classes": [{"type": "fighter", "level": 1}],
         "race": "Half-Orc",
         "photo": "https://i.pinimg.com/736x/92/1b/b2/921bb2b9cfaee0fb768cfb08be6f38be.jpg",
         "perks": {
