@@ -38,7 +38,7 @@
             "damage": "1d6 + 3"
         }],
         "languages": ["Общий"],
-        "otherProfiencies": [""],
+        "otherProficiencies": [""],
         "equipment": {
             "money": {
                 "gold": 10,
@@ -97,7 +97,7 @@
             "damage": "1d6 + 3"
         }],
         "languages": ["Общий"],
-        "otherProfiencies": [""],
+        "otherProficiencies": [""],
         "equipment": {
             "money": {
                 "gold": 10,

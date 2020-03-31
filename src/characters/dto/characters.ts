@@ -27,7 +27,6 @@ interface Hitpoints {
 type Alignments = 'LG' |
     'NG' |
     'CG' |
-    'NG' |
     'NN' |
     'CN' |
     'LE' |
@@ -73,7 +72,7 @@ export class Character {
     perks: Perks;
     deathSaves: DeathSaves;
     speed: number;
-    profiencyBonus: number;
+    proficiencyBonus: number;
     baseCharacteristics: BaseCharacteristics;
     hitpoints: Hitpoints;
     experience: number;
@@ -81,7 +80,7 @@ export class Character {
     armor: number;
     weapons: Weapon[];
     languages: string[];
-    otherProfiencies: string[];
+    otherProficiencies: string[];
     equipment: Inventory;
     personalityTraits: string;
     ideals: string;
