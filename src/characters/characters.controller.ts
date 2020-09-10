@@ -20,8 +20,8 @@ export class CharactersController {
         return UserSerializer.serialize(blob);
     }
 
-    private getCharacter(id: number): Character {
-        return UserSerializer.serialize(blob.find((character: Character) => character.id === id));
+    private getCharacter(id: number): Character[] {
+        return UserSerializer.serialize([blob.find((character: Character) => character.id === id)]);
     }
 
     private getCharacterIndexById(id: number): number {
@@ -47,8 +47,8 @@ export class CharactersController {
     }
 
     @Get(':id')
-    findCharacter(@Param('id') id: number): Character {
-        return this.getCharacter(id);
+    findCharacter(@Param('id') id: number): Character[] {
+        return this.getCharacter(Number(id));
     }
 
     @Post()
@@ -60,7 +60,7 @@ export class CharactersController {
 
     @Patch(':id')
     updateCharacter(@Param('id') id: number, @Body() characterParams: Partial<Character>): void {
-        const characterForUpdate: Character = this.getCharacter(id);
+        const characterForUpdate: Character = this.getCharacter(id)[0];
         const updatedCharacter: Character = {...characterForUpdate, ...characterParams};
         const charactersForUpdate = [...blob];
         const characterForUpdateIndex = this.getCharacterIndexById(id);
